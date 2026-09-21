@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de anotações</title>
+
+<!--importando fonte Poppins do google fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Bloco de notas</h1>
+    <form id="form-nota">
+  <input type="text" id="input-titulo" placeholder="Título" required>
+  <select id="input-tag">
+    <option value="Estudo">Estudo</option>
+    <option value="Trabalho">Trabalho</option>
+    <option value="Ideia">Ideia</option>
+    <option value="Outro">Outro</option>
+  </select>
+  <textarea id="input-conteudo" placeholder="Conteúdo" required></textarea>
+  <button type="submit">Salvar</button>
+</form>
+
+<div id="lista-notas"></div>
+   
+<script src="script.js"></script>
+
+</html>
